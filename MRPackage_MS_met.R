@@ -24,8 +24,6 @@ data_met_d$new_name_2=sapply(strsplit(data_met_d$id, split= "-"),"[",2)
 data_met_d=data_met_d[data_met_d$new_name_1=="met",]
 data_met_d=data_met_d[data_met_d$new_name_2=="d",]
 
-#ao <- available_outcomes()
-
 Pathway_out="/Users/yinhuige/Desktop/"
 
 final_res=data.frame("id.exposure","exposure","id.outcome","outcome", "b_IVW_MRE", "se_IVW_MRE", "pval_IVW_MRE", "b_IVW_FE", "se_IVW_FE", "pval_IVW_FE", "b_Egger", "se_Egger", "pval_Egger", "Egger_intercept", "pval_intercept", "Het_IVW_pval", "Het_Egger_pval", "b_W_Med", "se_W_Med", "pval_W_Med", "b_W_Mod", "se_W_Mod", "pval_W_Mod", "nsnps")
